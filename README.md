@@ -4,6 +4,8 @@ Audit, initialize, and maintain migration from a Claude Code harness to a Codex 
 
 This repository is packaged as a Codex skill. It helps users inspect their Claude Code setup, map it to Codex surfaces, and apply only confirmed Codex-side changes.
 
+Public repository: https://github.com/danyuchn/claude-codex-harness-sync
+
 ## What It Does
 
 - Inventories global Claude and Codex harness files.
@@ -16,9 +18,10 @@ This repository is packaged as a Codex skill. It helps users inspect their Claud
 
 ## Install
 
-Copy this folder into your Codex skills directory:
+Clone or download this repository, then copy the folder into your Codex skills directory:
 
 ```bash
+git clone https://github.com/danyuchn/claude-codex-harness-sync.git
 mkdir -p ~/.codex/skills
 cp -R claude-codex-harness-sync ~/.codex/skills/
 ```
