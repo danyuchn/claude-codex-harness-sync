@@ -43,6 +43,14 @@ At the start of setup or maintain, refresh official docs when internet access is
 
 If live docs cannot be fetched, say so and continue using the skill's built-in rules plus the user's detected local structure. Do not silently pretend the docs are current.
 
+## Bundled references
+
+Load bundled references only when needed:
+
+- `references/layer-map.md`: read when deciding how Claude layers map to Codex layers, especially for setup planning, path selection, or explaining non-1:1 migrations.
+- `references/risk-policy.md`: read before applying changes or presenting apply recommendations; use it to classify auto-apply, model-assisted manual work, never-auto-apply items, and secret handling.
+- `references/output-formats.md`: read when producing setup, maintain, apply, or validation reports.
+
 ## Official/current path assumptions
 
 Use these paths unless the user's machine proves otherwise:

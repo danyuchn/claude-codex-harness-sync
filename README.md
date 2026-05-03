@@ -26,6 +26,7 @@ Clone 或下載這個 repo，然後複製到 Codex skills 目錄：
 
 ```bash
 git clone https://github.com/danyuchn/claude-codex-harness-sync.git
+cd claude-codex-harness-sync
 mkdir -p ~/.codex/skills
 cp -R claude-codex-harness-sync ~/.codex/skills/
 ```
@@ -61,20 +62,20 @@ cp -R claude-codex-harness-sync ~/.codex/skills/
 Dry-run inventory：
 
 ```bash
-python3 scripts/inventory.py --mode setup --format markdown
+python3 claude-codex-harness-sync/scripts/inventory.py --mode setup --format markdown
 ```
 
 Drift classification：
 
 ```bash
-python3 scripts/inventory.py --mode maintain --format json > /tmp/harness-inventory.json
-python3 scripts/classify_drift.py /tmp/harness-inventory.json --format markdown
+python3 claude-codex-harness-sync/scripts/inventory.py --mode maintain --format json > /tmp/harness-inventory.json
+python3 claude-codex-harness-sync/scripts/classify_drift.py /tmp/harness-inventory.json --format markdown
 ```
 
 Validate Codex harness syntax：
 
 ```bash
-python3 scripts/validate_codex.py
+python3 claude-codex-harness-sync/scripts/validate_codex.py
 ```
 
 ### 授權
@@ -105,6 +106,7 @@ Clone or download this repository, then copy the folder into your Codex skills d
 
 ```bash
 git clone https://github.com/danyuchn/claude-codex-harness-sync.git
+cd claude-codex-harness-sync
 mkdir -p ~/.codex/skills
 cp -R claude-codex-harness-sync ~/.codex/skills/
 ```
@@ -140,20 +142,20 @@ The skill uses three tiers:
 Dry-run inventory:
 
 ```bash
-python3 scripts/inventory.py --mode setup --format markdown
+python3 claude-codex-harness-sync/scripts/inventory.py --mode setup --format markdown
 ```
 
 Drift classification:
 
 ```bash
-python3 scripts/inventory.py --mode maintain --format json > /tmp/harness-inventory.json
-python3 scripts/classify_drift.py /tmp/harness-inventory.json --format markdown
+python3 claude-codex-harness-sync/scripts/inventory.py --mode maintain --format json > /tmp/harness-inventory.json
+python3 claude-codex-harness-sync/scripts/classify_drift.py /tmp/harness-inventory.json --format markdown
 ```
 
 Validate Codex harness syntax:
 
 ```bash
-python3 scripts/validate_codex.py
+python3 claude-codex-harness-sync/scripts/validate_codex.py
 ```
 
 ### License
